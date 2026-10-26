@@ -1,0 +1,6 @@
+.welcome{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;background:#EEF3EF}
+.welcome-card{background:#fff;border-radius:28px;padding:32px 26px;max-width:400px;width:100%;box-shadow:0 20px 44px rgba(74,107,93,.2);text-align:center}
+.welcome-card h1{font-size:26px;line-height:1.15;font-weight:800;margin:10px 0}
+.welcome-table{display:inline-block;background:var(--primary);color:#fff;border-radius:99px;padding:6px 18px;font-weight:800}
+.welcome-form{display:grid;gap:12px;margin-top:20px;text-align:left}
+.welcome-err{color:var(--red);font-size:12px;font-weight:600}

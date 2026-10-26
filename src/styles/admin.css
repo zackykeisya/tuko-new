@@ -1,0 +1,6 @@
+.subnav{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.qr-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.qr-card{margin:0;text-align:center;display:flex;flex-direction:column;gap:8px}
+.qr-img{width:100%;max-width:200px;aspect-ratio:1;margin:0 auto;border-radius:10px;border:1px solid var(--line);background:#fff}
+.qr-url{word-break:break-all}
+.danger{border-color:var(--red)}

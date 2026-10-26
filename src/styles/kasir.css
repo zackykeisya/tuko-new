@@ -1,0 +1,21 @@
+.k{display:flex;min-height:100vh}
+.side{width:216px;background:#fff;border-right:1px solid var(--line);padding:16px 12px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:4px;flex:none}
+.logo{font-weight:800;font-size:22px;color:var(--primary);padding:4px 8px}
+.nv{display:flex;gap:10px;align-items:center;padding:11px 12px;border-radius:12px;font-weight:600;text-align:left;width:100%;text-decoration:none;color:inherit;transition:all .3s var(--ease)}
+.nv:hover{background:#F7F3EB}.nv.on{background:var(--primary);color:#fff}
+.sb{padding:10px;border-radius:12px;background:#FEF3C7;color:var(--accent);font-weight:700;font-size:12px;cursor:pointer;margin-bottom:8px;text-align:left;width:100%}
+.sb.on{background:#E8F5E9;color:#2E7D32}.sb.on::before{content:'';display:inline-block;width:8px;height:8px;border-radius:50%;background:#2E7D32;margin-right:6px;animation:blink 1.4s infinite}
+@keyframes blink{50%{opacity:.25}}
+.k-main{flex:1;padding:20px;min-width:0}.mh{display:none}
+.lay{display:flex;gap:16px;align-items:flex-start}.lay>div:first-child{flex:1;min-width:0}
+.cp{width:330px;position:sticky;top:16px;flex:none;margin:0}
+.bar{display:none}
+.rc-box{font-family:'Courier New',monospace;font-size:12px}
+@media(max-width:860px){
+ .k{display:block}.side{position:fixed;bottom:0;left:0;right:0;width:auto;height:auto;flex-direction:row;z-index:25;padding:6px;border-top:1px solid var(--line);border-right:0}
+ .side .logo,.side .sb,.side .xt{display:none}.nv{flex-direction:column;gap:2px;font-size:10px;padding:6px 2px;justify-content:center}
+ .k-main{padding:12px 12px 90px}.mh{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:8px}
+ .lay{display:block}.cp{width:auto;position:static;margin-top:14px}
+ .bar{display:flex;position:fixed;left:12px;right:12px;bottom:74px;z-index:24;background:var(--primary);color:#fff;border-radius:16px;padding:13px 18px;justify-content:space-between;font-weight:800;width:auto}
+}
+@media print{body *{visibility:hidden}#rc,#rc *{visibility:visible}#rc{position:absolute;left:0;top:0;width:58mm}}
